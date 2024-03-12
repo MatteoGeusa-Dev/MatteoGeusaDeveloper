@@ -10,9 +10,8 @@ function Card() {
         setTimeString(updatetimer());
         
         // Aggiorna l'orario ogni secondo
-        const interval = setInterval(() => {
-            setTimeString(updatetimer());
-        }, 800);
+        const interval = setTimeString(updatetimer());
+        
 
         // Pulisci l'intervallo quando il componente si smonta
         return () => clearInterval(interval);
@@ -22,15 +21,13 @@ function Card() {
         var today = new Date();
         var italyTimeHours = today.getHours(); // Ottieni le ore locali
         var italyTimeMinutes = today.getMinutes(); // Ottieni i minuti
-        var italyTimeSeconds = today.getSeconds(); // Ottieni i secondi
         var ampm = italyTimeHours >= 12 ? 'PM' : 'AM'; // Determina se è AM o PM
         italyTimeHours = italyTimeHours % 12;
         italyTimeHours = italyTimeHours ? italyTimeHours : 12; // Imposta le ore a 12 se è mezzogiorno
 
         // Formatta l'ora nel formato hh:mm:ss AM/PM
         var timeString = italyTimeHours.toString().padStart(2, '0') + ":" +
-            italyTimeMinutes.toString().padStart(2, '0') + ":" +
-            italyTimeSeconds.toString().padStart(2, '0') + " " +
+            italyTimeMinutes.toString().padStart(2, '0') + " " +
             ampm;
 
         return timeString;
