@@ -1,7 +1,7 @@
 {
+  "homepage": "https://github.com/MatteoGeusa-Dev/MatteoGeusaDeveloper",
   "name": "mysitereact",
   "private": true,
-  "homepage": "https://MatteoGeusa-Dev.github.io/MatteoGeusaDeveloper",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
