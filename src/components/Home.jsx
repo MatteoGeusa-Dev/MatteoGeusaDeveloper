@@ -5,7 +5,7 @@ function Home(){
         <>
                 <div className="maintext">
                     <h1>Hi!, I'm Matteo</h1>
-                    <span>/Full Stack Developer</span>
+                    <span>/ Jr. Web Developer /</span>
                 </div>
         </>
 

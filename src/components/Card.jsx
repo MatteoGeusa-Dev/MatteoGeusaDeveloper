@@ -43,7 +43,7 @@ function Card() {
                 </div>
                 <div className="infofast">
                     <Infoline icon="./school_FILL0_wght400_GRAD0_opsz24.svg" desc="Computer Science" />
-                    <Infoline icon="./code_blocks_FILL0_wght400_GRAD0_opsz24.svg" desc="Full Stack Developer" />
+                    <Infoline icon="./code_blocks_FILL0_wght400_GRAD0_opsz24.svg" desc="Jr. Web Developer" />
                     <Infoline icon="./schedule_FILL0_wght400_GRAD0_opsz24.svg" desc="Italy ( UTC +01:00 )" time={timeString} lamp={true} />
                 </div>
             </div>
