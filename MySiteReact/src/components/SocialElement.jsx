@@ -3,9 +3,9 @@ import "./SocialElement.css"
 
 function SocialElement({ link, type }) {
     const SocialType = {
-        instagram: "src/assets/Social/icons8-instagram.svg",
-        linkedin: "src/assets/Social/icons8-linkedin-circled.svg",
-        github: "src/assets/Social/icons8-github.svg"
+        instagram: "./Social/icons8-instagram.svg",
+        linkedin: "./Social/icons8-linkedin-circled.svg",
+        github: "./Social/icons8-github.svg"
     };
 
     // Verifica se è stato fornito un tipo valido

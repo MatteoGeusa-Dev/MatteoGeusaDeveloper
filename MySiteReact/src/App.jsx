@@ -35,7 +35,7 @@ function App() {
       <Separatore></Separatore>
       <section id="About Me" class="aboutmesections">
         <div class="contentspace">
-          <img class="mainimage" id="aboutmecontent" src="/public/assets/pro_pick.jpg" />
+          <img class="mainimage" id="aboutmecontent" src="./pro_pick.jpg" />
           <div class="text">
             <hr class="sep" />
             <h1>
@@ -62,14 +62,14 @@ function App() {
               </div>
               <div class="timelineleft">
                 <p>-/ My Knowledge /-</p>
-                <Know icon="./assets/lenguage icons/icons8-html-5.svg" desc="Html"></Know>
-                <Know icon="./assets/lenguage icons/icons8-css3.svg" desc="Css"></Know>
-                <Know icon="./assets/lenguage icons/icons8-javascript-logo.svg" desc="JavaScript"></Know>
-                <Know icon="./assets/lenguage icons/react.png" desc="React"></Know>
-                <Know icon="./assets/lenguage icons/nodejs-icon.jpg" desc="Node.js"></Know>
-                <Know icon="./assets/lenguage icons/icons8-python.svg" desc="Pyhton"></Know>
-                <Know icon="./assets/lenguage icons/icons8-java.svg" desc="Java"></Know>
-                <Know icon="./assets/lenguage icons/icons8-.net-framework.svg" desc=".Net FrameWork"></Know>
+                <Know icon="./lenguage icons/icons8-html-5.svg" desc="Html"></Know>
+                <Know icon="./lenguage icons/icons8-css3.svg" desc="Css"></Know>
+                <Know icon="./lenguage icons/icons8-javascript-logo.svg" desc="JavaScript"></Know>
+                <Know icon="./lenguage icons/react.png" desc="React"></Know>
+                <Know icon="./lenguage icons/nodejs-icon.jpg" desc="Node.js"></Know>
+                <Know icon="./lenguage icons/icons8-python.svg" desc="Pyhton"></Know>
+                <Know icon="./lenguage icons/icons8-java.svg" desc="Java"></Know>
+                <Know icon="./lenguage icons/icons8-.net-framework.svg" desc=".Net FrameWork"></Know>
               </div>
             </div>
           </div>
