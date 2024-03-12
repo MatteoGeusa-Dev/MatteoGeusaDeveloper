@@ -1,24 +1,17 @@
-.maintext{
-    margin: 0 auto;
-    color: #fff;
-    text-align: center;
-    max-width: 800px;
+.inline{
+    display: flex;
+    margin: 6px;
+    padding: 2px;
 }
 
-.maintext h1{
-    font-weight: 200px;
-    font-family: "Manrope", sans-serif;
-    font-size: 120px;
-    margin-bottom: 30px;
-    line-height: 90px;
-    letter-spacing: -7px;
+span {
+    text-wrap: nowrap;
+    margin: 5px;
+    margin-left: 10px;
 }
 
-.maintext span{
-    font-weight: 1;
-    font-family: "Manrope", sans-serif;
-    font-size: 20px;
-    margin-bottom: 0;
+.infoimg {
+    filter: invert(1);
 }
 
 
@@ -28,10 +21,6 @@
     .navmenu a {
         font-size: 15px;
         padding: 0;
-    }
-
-    .maintext {
-        margin: 60px auto -40px auto;
     }
   
     .maintext h1 {
@@ -103,7 +92,6 @@
     .contentspace {
         max-width: 350px;
     }
-  
 
   
     .underaboutme {

@@ -1,25 +1,17 @@
-.maintext{
-    margin: 0 auto;
-    color: #fff;
-    text-align: center;
-    max-width: 800px;
+.invertsocial {
+    object-fit: contain;
+    filter: invert(1) drop-shadow(0px 0px 3px #ffffff52);
+    margin: auto 0;
+    height: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 0.2s ease;
 }
 
-.maintext h1{
-    font-weight: 200px;
-    font-family: "Manrope", sans-serif;
-    font-size: 120px;
-    margin-bottom: 30px;
-    line-height: 90px;
-    letter-spacing: -7px;
+.invertsocial:hover {
+    scale: 110%;
 }
 
-.maintext span{
-    font-weight: 1;
-    font-family: "Manrope", sans-serif;
-    font-size: 20px;
-    margin-bottom: 0;
-}
 
 
 /* Stili specifici per smartphone */
@@ -28,10 +20,6 @@
     .navmenu a {
         font-size: 15px;
         padding: 0;
-    }
-
-    .maintext {
-        margin: 60px auto -40px auto;
     }
   
     .maintext h1 {
