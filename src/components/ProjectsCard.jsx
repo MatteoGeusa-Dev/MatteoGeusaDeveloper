@@ -3,11 +3,11 @@ import "./ProjectsCard.css"
 
 function ProjectsCard({ title, projectscodes = [], desc, show, repo }) {
     const languageIcons = {
-        html: "src/assets/lenguage icons/icons8-html-5.svg",
-        css: "src/assets/lenguage icons/icons8-css3.svg",
-        javascript: "src/assets/lenguage icons/icons8-javascript-logo.svg",
-        react:"src/assets/lenguage icons/react.png",
-        pyhton:"src/assets/lenguage icons/icons8-python.svg"
+        html: "./lenguage icons/icons8-html-5.svg",
+        css: "./lenguage icons/icons8-css3.svg",
+        javascript: "./lenguage icons/icons8-javascript-logo.svg",
+        react:"./lenguage icons/react.png",
+        pyhton:"./lenguage icons/icons8-python.svg"
         // Aggiungi altri linguaggi qui, se necessario
     };
 
@@ -23,7 +23,7 @@ function ProjectsCard({ title, projectscodes = [], desc, show, repo }) {
     return (
         <div className="card">
             <div className="titlebox">
-                <img src="src/assets/folder_open_FILL0_wght400_GRAD0_opsz24.svg" className="iconfolder" />
+                <img src="./folder_open_FILL0_wght400_GRAD0_opsz24.svg" className="iconfolder" />
                 <span className="titlecard">{title}</span>
             </div>
             <hr className="separatorcoders" />

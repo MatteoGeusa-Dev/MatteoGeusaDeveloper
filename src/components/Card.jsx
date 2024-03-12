@@ -29,14 +29,14 @@ function Card(){
             <div class="mainbox">
                 <div class="backbox">
                     <div class="box">
-                        <img class="myimg" src="./src/assets/pro_pick.jpg"/>
+                        <img class="myimg" src="./pro_pick.jpg"/>
                         <p>I'm a developer based in Rome, currently studying computer science at La Sapienza University. I'm
                             absolutely hooked on programming and can easily lose track of time glued to my PC</p>
                     </div>
                     <div class="infofast">
-                        <Infoline icon="./src/assets/school_FILL0_wght400_GRAD0_opsz24.svg" desc="Computer Science"/>
-                        <Infoline icon="./src/assets/code_blocks_FILL0_wght400_GRAD0_opsz24.svg" desc="Full Stack Developer"/>
-                        <Infoline icon="./src/assets/schedule_FILL0_wght400_GRAD0_opsz24.svg" desc="Italy (UTC +01:00)" time={timestring}/>
+                        <Infoline icon="./school_FILL0_wght400_GRAD0_opsz24.svg" desc="Computer Science"/>
+                        <Infoline icon="./code_blocks_FILL0_wght400_GRAD0_opsz24.svg" desc="Full Stack Developer"/>
+                        <Infoline icon="./schedule_FILL0_wght400_GRAD0_opsz24.svg" desc="Italy ( UTC +01:00 )" time={timestring}/>
                     </div>
                 </div>
             </div>
