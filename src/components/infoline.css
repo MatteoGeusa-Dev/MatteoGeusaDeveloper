@@ -14,6 +14,43 @@ span {
     filter: invert(1);
 }
 
+.it{
+    text-wrap: nowrap;
+    margin: 10px auto;
+    margin-left: 10px;
+}
+
+
+.lamp{  
+        border-radius: 20px;
+        padding: 3px;
+        text-wrap: nowrap;
+        margin: auto 5px;
+        margin-left: 10px;
+        padding: 4px;
+      }
+
+
+      @keyframes glowing {
+        0% {
+          background-color: #003366;
+          box-shadow: 0 0 5px #003366;
+        }
+        50% {
+          background-color: #005ab300;
+          box-shadow: 0 0 20px #005ab300;
+        }
+        100% {
+          background-color: #003366;
+          box-shadow: 0 0 5px #003366;
+        }
+      }
+      
+
+  .lamp {
+    animation: glowing 1300ms infinite;
+  }
+
 
 /* Stili specifici per smartphone */
 @media only screen and (max-width: 1250px) {
@@ -67,13 +104,7 @@ span {
   
   
   
-    .infofast {
-        display: block;
-        max-width: 300px;
-  
-        scale: 80%;
-        margin: 20px auto;
-    }
+
   
     .sep {
         margin-top: 100px;
