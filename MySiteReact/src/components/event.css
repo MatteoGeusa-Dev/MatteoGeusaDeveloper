@@ -8,6 +8,7 @@
     margin-left: 60px;
 
 }
+
 .eventdotted {
     display: flex;
 }
@@ -21,11 +22,42 @@
     margin: auto 20px;
 }
 
+.pointnow {
+    border-radius: 9999px;
+    background-color: rgba(0, 255, 191, 0.664);
+    box-shadow: 0 0 10px rgba(0, 255, 179, 0.747);
+    min-width: 15px;
+    min-height: 15px;
+    margin: auto 20px;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 255, 191, 0.664);
+        background-color: rgba(0, 255, 191, 0.664);
+    }
+
+    50% {
+        background-color: rgb(0, 255, 242);
+        box-shadow: 0 0 20px rgb(0, 255, 242);
+    }
+
+    100% {
+        background-color: rgba(0, 255, 191, 0.664);
+        box-shadow: 0 0 10px rgba(0, 255, 191, 0.664);
+    }
+}
+
+
+.pointnow {
+    animation: glowing 1000ms infinite;
+}
+
 
 .date {
     min-width: 80px;
     max-width: 80px;
-    background-color: rgba(5, 23, 56, 0.664);
+    background-color: rgba(4, 12, 48, 0.664);
     text-align: center;
     margin: auto 0px;
     border-radius: 9999px;
@@ -40,19 +72,19 @@
         font-size: 15px;
         padding: 0;
     }
-  
+
     .maintext h1 {
         font-size: 60px;
         letter-spacing: -4px;
         margin: 20px auto;
         margin-bottom: 0;
     }
-  
+
     .backbox {
         display: block;
         padding: 0;
     }
-  
+
     .box {
         width: fit-content;
         height: 270px;
@@ -60,137 +92,130 @@
         margin: 50px auto 50px 0px;
         scale: 85%;
     }
-  
-  
+
+
     .box p {
-  
+
         margin: auto 10px;
         font-size: 18px;
         display: flex;
         text-align: center;
         justify-content: center;
     }
-  
+
     .homecontent {
         height: 120px;
     }
-  
-  
+
+
     .myimg {
         display: flex;
         margin: 15px auto;
         height: 130px;
         width: 130px;
     }
-  
-  
-  
-    .infofast {
-        display: block;
-        max-width: 300px;
-  
-        scale: 80%;
-        margin: 20px auto;
-    }
-  
+
+
+
+
     .sep {
         margin-top: 100px;
     }
-  
+
     .funnybutton {
         margin-top: 20px;
     }
-  
+
     .sep {
         width: 300px;
         margin-top: 0;
     }
-  
-  
+
+
     .contentspace {
         max-width: 350px;
     }
-  
 
-  
+
+
     .underaboutme {
         display: block;
         max-width: 300px;
         margin: 10px auto;
-  
-  
+
+
     }
-  
+
     .timelineleft {
         max-width: 300px;
         min-width: 300px;
         margin: 30px auto;
     }
-  
+
     .timelineright {
         max-width: 300px;
         min-width: 300px;
         margin: 30px auto;
     }
-  
+
     .aboutmesections {
         height: 1300px;
     }
-  
+
     .cardbox {
         display: block;
     }
-  
+
     .myprojectsection {
         height: 1800px;
     }
-  
+
     .text {
         margin: 0 auto;
         width: 355px;
-  
+
     }
-  
+
     .backbox {
         width: 375px;
     }
-  
+
     .projects {
         width: 350px;
     }
-  
+
     .card {
         min-width: 300px;
     }
-  
+
     .text p {
         text-align: center;
     }
-  
+
     .text h1 {
         padding: 10px;
         font-size: 25px;
-  
+
         max-width: 200px;
     }
-  
+
     .maintext h1 {
         margin-top: 3px;
     }
-  
+
     .desc {
         height: 145px;
-  
+
     }
-  
+
     .separatorcoders {
         max-width: 200px;
     }
-  
+
     .titlecard {
         font-size: 18px;
     }
-  
+
     .moreprojects button {
         font-family: "Source Code Pro", monospace;
         font-size: 18px;
@@ -200,8 +225,8 @@
         transition: all 0.2s ease;
         color: white;
     }
-  
-  
-  
-  
-  }
+
+
+
+
+}
