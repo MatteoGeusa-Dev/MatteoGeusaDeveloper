@@ -56,9 +56,9 @@ function App() {
             <div class="underaboutme">
               <div class="timelineright">
                 <p>-/ My Time Line /-</p>
-                <Event date="2022" desc="Graduated at Superior SchoolsItes Olivetti (Lecce)"></Event>
-                <Event date="2023" desc="Started Computer Science University La Sapienza (Rome)"></Event>
-                <Event date="Now" now={"now"} desc="Continuing education in front-end and back-end development"></Event>
+                  <Event date="Now" now={"now"} desc="Continuing education in front-end and back-end development"></Event>
+                  <Event date="2023" desc="Started Computer Science University La Sapienza (Rome)"></Event>
+                  <Event date="2022" desc="Graduated at Superior SchoolsItes Olivetti (Lecce)"></Event>
               </div>
               <div class="timelineleft">
                 <p>-/ My Knowledge /-</p>
