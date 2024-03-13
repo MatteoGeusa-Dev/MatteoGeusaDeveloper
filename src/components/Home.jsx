@@ -23,11 +23,17 @@ function Typewriter({ text, speed}) {
   return <span className="se" dangerouslySetInnerHTML={{ __html: displayText }} />;;
 }
 
+function randomNumberInRange(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
 function Home() {
+    var x = randomNumberInRange(0,10)
   return (
     <div className="maintext">
       <h1 className="maintitle">
-        <Typewriter text="Hi, ${user}, I'm Matteo!" speed={100}/>
+        {x > 5 ? (<Typewriter text="Hi ${user}, I'm Matteo!" speed={100}/>):(<Typewriter text=":) Hi, I'm Matteo!" speed={100}/>)}
       </h1>
       <span className="underh1">/ Jr. Web Developer /</span>
     </div>
