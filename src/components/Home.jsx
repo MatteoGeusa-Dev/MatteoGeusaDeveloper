@@ -12,7 +12,6 @@ function Typewriter({ text, speed}) {
         setDisplayText(text.substring(0, newPosition) + (newPosition === text.length ? `<hr class="char blink" />` : `<hr class="char" />`));
         positionRef.current = newPosition;
       } else {
-        setIsFinished(true);
         clearInterval(interval);
       }
     }, speed);
@@ -28,7 +27,7 @@ function Home() {
   return (
     <div className="maintext">
       <h1 className="maintitle">
-        <Typewriter className="maintitle" text="Hi, ${user}, I'm Matteo!" speed={100}/>
+        <Typewriter text="Hi, ${user}, I'm Matteo!" speed={100}/>
       </h1>
       <span className="underh1">/ Jr. Web Developer /</span>
     </div>
