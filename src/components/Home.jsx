@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Home.css';
 
-function Typewriter({ text, speed}) {
+function Typewriter({ text, speed }) {
   const [displayText, setDisplayText] = useState('');
   const positionRef = useRef(0);
 
@@ -19,21 +19,39 @@ function Typewriter({ text, speed}) {
     return () => clearInterval(interval);
   }, [text, speed]);
 
-
-  return <span className="se" dangerouslySetInnerHTML={{ __html: displayText }} />;;
+  return <span className="se" dangerouslySetInnerHTML={{ __html: displayText }} />;
 }
-
-function randomNumberInRange(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
 
 function Home() {
-    var x = randomNumberInRange(0,10)
+  const arr = [
+    `Ciao!, Sono Matteo!`, // Italiano
+    `Hi!, I'm Matteo!`, // Inglese
+    `¡Hola!, soy Matteo!`, // Spagnolo
+    `Bonjour!, Je suis Matteo!`, // Francese
+    `Olá!, Eu sou Matteo!`, // Portoghese
+
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [key, setKey] = useState(0); // Chiave per forzare la rimozione e la ricreazione del componente Typewriter
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % arr.length);
+    }, 4000); // Cambia elemento ogni 2 secondi
+
+    return () => clearInterval(interval);
+  }, [arr]);
+
+  useEffect(() => {
+    // Incrementa la chiave per forzare la rimozione e la ricreazione del componente Typewriter
+    setKey((prevKey) => prevKey + 1);
+  }, [currentIndex]);
+
   return (
     <div className="maintext">
       <h1 className="maintitle">
-        {x > 5 ? (<Typewriter text="Hi ${user}, I'm Matteo!" speed={100}/>):(<Typewriter text=":) Hi, I'm Matteo!" speed={100}/>)}
+        <Typewriter key={key} text={arr[currentIndex]} speed={100} />
       </h1>
       <span className="underh1">/ Jr. Web Developer /</span>
     </div>
