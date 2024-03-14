@@ -27,7 +27,6 @@ function Home() {
     `Ciao!, Sono Matteo!`, // Italiano
     `Hi!, I'm Matteo!`, // Inglese
     `¡Hola!, soy Matteo!`, // Spagnolo
-    `Bonjour!, Je suis Matteo!`, // Francese
     `Olá!, Eu sou Matteo!`, // Portoghese
 
   ];
