@@ -23,11 +23,11 @@ function Typewriter({ text, speed }) {
 }
 
 function Home() {
-  const arr = [
-    `Ciao!, Sono Matteo!`, // Italiano
-    `Hi!, I'm Matteo!`, // Inglese
-    `¡Hola!, soy Matteo!`, // Spagnolo
-    `Olá!, Eu sou Matteo!`, // Portoghese
+  const leng = [
+    `Ciao! Sono Matteo!`, 
+    `Hi! I'm Matteo!`, 
+    `¡Hola! soy Matteo!`, 
+    `Olá! Eu sou Matteo!`,
 
   ];
 
@@ -36,11 +36,11 @@ function Home() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % arr.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % leng.length);
     }, 4000); // Cambia elemento ogni 2 secondi
 
     return () => clearInterval(interval);
-  }, [arr]);
+  }, [leng]);
 
   useEffect(() => {
     // Incrementa la chiave per forzare la rimozione e la ricreazione del componente Typewriter
@@ -50,7 +50,7 @@ function Home() {
   return (
     <div className="maintext">
       <h1 className="maintitle">
-        <Typewriter key={key} text={arr[currentIndex]} speed={100} />
+        <Typewriter key={key} text={leng[currentIndex]} speed={100} />
       </h1>
       <span className="underh1">/ Jr. Web Developer /</span>
     </div>
